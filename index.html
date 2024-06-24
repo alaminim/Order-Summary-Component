@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/pattern-background-desktop.svg);
+      }
+      .main-container {
+        margin-top: 2rem;
+        margin-bottom: 2px;
+        background-color: rgb(233, 233, 233);
+        width: 310px;
+        height: 550px;
+        border-radius: 10px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        line-height: 1.5;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #hero-image {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 150px;
+      }
+      .div-3 {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #description {
+        font-size: 14px;
+      }
+      #music-icon {
+        height: 50px;
+        width: 35px;
+      }
+      #submit {
+        background-color: blue;
+        color: #fff;
+        border-radius: 10px;
+        width: 200px;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <img
+        src="./images/illustration-hero.svg"
+        alt="hero-img"
+        id="hero-image"
+        srcset=""
+      />
+      <h2 id="title">Order Summary</h2>
+      <p id="description">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div class="div-3">
+        <img
+          src="./images/icon-music.svg"
+          alt="music-icon"
+          id="music-icon"
+          srcset=""
+        />
+        <div class="price">
+          <h5>Annual Plan</h5>
+          <p id="price-value">$59.99/year</p>
+        </div>
+        <a href="#"> Change</a>
+      </div>
+
+      <button type="submit" id="submit">Proceed to Payment</button>
+      <p id="cancel">Cancel Order</p>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">imAlameen</a>.
+    </div>
+  </body>
+</html>
